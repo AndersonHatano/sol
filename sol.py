@@ -1,4 +1,5 @@
 import speech_recognition as sr
+import teste_audio
 
 #Função para ouvir e reconhecer a fala
 def ouvir_microfone():
@@ -24,6 +25,7 @@ def ouvir_microfone():
         
         #Retorna a frase pronunciada
         print("Você disse: " + frase)
+        teste_audio.reading_from_string(frase)
         
     #Se nao reconheceu o padrao de fala, exibe a mensagem
     except sr.UnkownValueError:
