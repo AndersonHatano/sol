@@ -6,8 +6,6 @@ from selenium.webdriver.common.keys import Keys
 
 frase = sol.ouvir_microfone()
 
-
-
 if(frase == "Google"):
 
     #Abri o navegador no site inicial de busca do Google
